@@ -14,12 +14,11 @@
   <builders>
     <org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder plugin="ansible@1.1">
       <playbook>/home/ubuntu/playbook-prod.yml</playbook>
-      <ansibleName>ansible</ansibleName>
       <limit></limit>
       <tags></tags>
       <skippedTags></skippedTags>
       <startAtTask></startAtTask>
-      <credentialsId></credentialsId>
+      <credentialsId>ssh-preprod</credentialsId>
       <vaultCredentialsId></vaultCredentialsId>
       <become>false</become>
       <becomeUser></becomeUser>
